@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>VMS </title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <style>
+  html {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #333;
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 0.5em;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: 500;
+  margin-bottom: 0.5em;
+}
+
+h3 {
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-bottom: 0.4em;
+}
+
+p {
+  font-size: 1rem;
+  margin-bottom: 1em;
+}
+
+    .hero {
+      background: url('VMS-HERO2.png') center center / cover no-repeat;
+      height: 100vh;
+      width: 100%;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      position: relative;
+    }
+
+    .hero h1 {
+      font-size: 4rem;
+      text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7);
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      font-size: 1.5rem;
+      margin-bottom: 30px;
+      text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
+    }
+
+    .hero .cta-button {
+      background-color: #ff6600;
+      color: white;
+      padding: 15px 30px;
+      font-size: 1rem;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      text-transform: uppercase;
+      transition: background-color 0.3s ease;
+    }
+
+    .hero .cta-button:hover {
+      background-color: #e55a00;
+    }
+
+    .services {
+      background-color: #f4f4f4;
+      padding: 60px 20px;
+      max-width: 1200px;
+      margin: 30px auto 0 auto;
+    }
+
+    .services h2 {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .services .service-items {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+
+    .service-item {
+      flex: 1 1 250px;
+      background: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      text-align: center;
+    }
+
+.service-item img {
+  width: 100%;
+  height: 200px; /* Set a consistent height */
+  object-fit: cover; /* Ensures uniform size without distortion */
+  border-radius: 10px;
+}
+
+
+.info-section {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  padding: 60px 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.info-section.reverse {
+  flex-direction: row-reverse;
+}
+
+.info-section img {
+  width: 50%;
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.info-section .text {
+  width: 50%;
+}
+
+@media (max-width: 768px) {
+  .info-section,
+  .info-section.reverse {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .info-section img,
+  .info-section .text {
+    width: 100%;
+  }
+
+  .info-section .text {
+    padding-top: 20px;
+  }
+}
+
+.top-bar {
+  background-color: #333;
+  color: white;
+  padding: 10px 20px;
+  font-size: 0.9rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.top-bar .contact-item {
+  margin: 5px 0;
+}
+
+@media (max-width: 768px) {
+  .top-bar {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+.site-footer {
+  background-color: #333;
+  color: white;
+  padding: 30px 20px;
+  text-align: center;
+}
+
+.site-footer a {
+  color: #ffcc80; /* soft contrast color for links */
+  text-decoration: none;
+}
+
+.site-footer a:hover {
+  text-decoration: underline;
+}
+
+.footer-content p {
+  margin: 8px 0;
+  font-size: 0.95rem;
+}
+
+
+  </style>
+</head>
+<body>
+
+  <section class="hero">
+    <h1>ΕΝΕΡΓΕΙΑΚΗ ΑΝΑΒΑΘΜΙΣΗ ΚΤΙΡΙΩΝ</h1>
+    <p>Καλως Ηλθατε στην VMS</p>
+    <button class="cta-button">Get Started</button>
+  </section>
+
+  <section class="services">
+    <h2>Οι υπηρεσιες μας</h2>
+    <div class="service-items">
+      <div class="service-item">
+        <img src="roof-insulation.png" alt="Service 1" />
+        <h3>Μονωση Ταρατσας</h3>
+        <a href=#>Διαβαστε Περισσοτερα..</a>
+      </div>
+      <div class="service-item">
+        <img src="skepi2.png" alt="Service 2" />
+        <h3>Μονωση Στεγης</h3>
+        <a href=#>Διαβαστε Περισσοτερα..</a>
+      </div>
+      <div class="service-item">
+        <img src="toixos-monosi.jpg" alt="Service 3" />
+        <h3>Μονωση Τοιχοποιιας</h3>
+        <a href=#>Διαβαστε Περισσοτερα..</a>
+      </div>
+      <div class="service-item">
+        <img src="air-conditioner-1185041_640.jpg" alt="Service 4" />
+        <h3>Θερμανση Ψυξη</h3>
+        <a href=#>Διαβαστε Περισσοτερα..</a>
+      </div>
+      <div class="service-item">
+        <img src="ceiling-ventilation-199201_640.jpg" alt="Service 5" />
+        <h3>Μηχανικος Αερισμος</h3>
+        <a href=#>Διαβαστε Περισσοτερα..</a>
+      </div>
+      <div class="service-item">
+        <img src="pexels-kindelmedia-9875408 (1).jpg" alt="Service 6" />
+        <h3>Ηλιακα</h3>
+        <a href=#>Διαβαστε Περισσοτερα..</a>
+      </div>
+    </div>
+  </section>
+
+<section class="info-section">
+  <img src="energeiakh-aksiologhsh.png" alt="Feature 1" />
+  <div class="text">
+    <h2>ΕΝΕΡΓΕΙΑΚΗ ΑΞΙΟΛΟΓΗΣΗ ΚΤΙΡΙΟΥ</h2>
+    <p>Η ενεργειακή αξιολόγηση του κτιρίου είναι πολύ σημαντική, τόσο για το ενεργειακό "αποτύπωμα" και την αξία του ακινήτου, όσο και για την περιβαλλοντική πορεία του πλανήτη.</p>
+    <a href=#>Διαβαστε Περισσοτερα..</a>
+  </div>
+</section>
+
+<section class="info-section reverse">
+  <img src="6.-ΠΡΟΓΡΑΜΜΑ-ΕΞΟΙΚΟΝΟΜΩ-2048x1246.webp" alt="Feature 2" />
+  <div class="text">
+    <h2>ΠΡΟΓΡΑΜΜΑ ΕΞΟΙΚΟΝΟΜΩ</h2>
+    <p>Το Πρόγραμμα Εξοικονομώ αποτελεί ένα πολύ χρήσιμο εργαλείο χρηματοδότησης μίας ριζικής ενεργειακής αναβάθμισης.</p>
+        <a href=#>Διαβαστε Περισσοτερα..</a>
+  </div>
+</section>
+<footer class="site-footer">
+  <div class="footer-content">
+    <p><strong>📍 Διεύθυνση:</strong> Λεωφόρος Κηφισίας 123, Αθήνα, 11526</p>
+    <p><strong>📞 Τηλέφωνο:</strong> <a href="tel:+302101234567">210 123 4567</a></p>
+    <p><strong>✉️ Email:</strong> <a href="mailto:info@vms.gr">info@vms.gr</a></p>
+    <p class="copyright">© 2025 VMS. Με επιφύλαξη παντός δικαιώματος.</p>
+  </div>
+</footer>
+
+
+  <script>
+    console.log("Page loaded.");
+  </script>
+
+</body>
+</html>
